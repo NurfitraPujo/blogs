@@ -1,0 +1,61 @@
+/* If you need to add @import statements, do so up here */
+
+@import "jit-refresh.css"; /* triggers frontend rebuilds */
+
+/* Set up Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body-background: #f2f2f2;
+  --body-color: #444;
+  --heading-color: black;
+  --action-color: #44cfae;
+  --primary-color: @apply text-primary;
+}
+
+body {
+  color: var(--body-color);
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+}
+
+header > nav ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  @apply font-bold;
+}
+
+header > nav a {
+  @apply font-sans text-white text-sm tracking-wide;
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 2px dotted #bbb;
+  margin: 3rem 0;
+}
+
+p {
+  @apply text-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply tracking-wide;
+}
+
+.active-link {
+  border-bottom: 2px solid --primary-color;
+}

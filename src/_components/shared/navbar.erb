@@ -1,0 +1,18 @@
+<header class="flex flex-row items-center py-2 px-8 h-16 w-100 gap-x-8">
+  <div class="flex flex-row items-center">
+    <a href="/">
+      <img
+        src="<%= relative_url '/images/logo.svg'  %>"
+        alt="Logo"
+        class="object-cover h-full w-full max-h-10"
+      />
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <%= render Shared::NavLinkComponent.new(href: (relative_url '/'), text: 'Home') %>
+    <li><a href="<%= relative_url '/about' %>">About</a></li>
+      <li><a href="<%= relative_url '/posts' %>">Posts</a></li>
+    </ul>
+  </nav>
+</header>
