@@ -33,7 +33,7 @@ header > nav ul {
 }
 
 header > nav a {
-  @apply font-sans text-white text-sm tracking-wide;
+  @apply font-sans text-white text-sm tracking-wide py-1;
   text-decoration: none;
 }
 
@@ -57,5 +57,5 @@ h6 {
 }
 
 .active-link {
-  border-bottom: 2px solid --primary-color;
+  border-bottom: 2px solid var(--action-color);
 }
