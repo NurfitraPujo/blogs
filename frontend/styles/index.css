@@ -59,3 +59,11 @@ h6 {
 .active-link {
   border-bottom: 2px solid var(--action-color);
 }
+
+article p {
+  @apply my-3;
+}
+
+article .card {
+  @apply px-10 py-5 rounded bg-slate-800 shadow-md;
+}

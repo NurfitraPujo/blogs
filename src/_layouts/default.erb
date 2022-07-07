@@ -16,7 +16,7 @@
   <body class="<%= resource.data.layout %> <%= resource.data.page_class %> bg-gradient-radial flex flex-col items-center min-h-screen w-100">
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
-    <main class="flex flex-col items-center justify-center flex-grow">
+    <main class="flex flex-col items-center flex-grow">
       <%= yield %>
     </main>
 
