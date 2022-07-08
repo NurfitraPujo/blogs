@@ -6,11 +6,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      onload="this.rel='stylesheet'" 
     />
     <script
       src="https://kit.fontawesome.com/a843303db9.js"
       crossorigin="anonymous"
+      defer
     ></script>
   </head>
   <body class="<%= resource.data.layout %> <%= resource.data.page_class %> bg-gradient-radial flex flex-col items-center min-h-screen w-100">
