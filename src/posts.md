@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: collections
 title: Posts
 ---
 
