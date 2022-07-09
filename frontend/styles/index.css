@@ -61,7 +61,7 @@ h6 {
 }
 
 article p {
-  @apply my-3;
+  @apply my-3 leading-relaxed;
 }
 
 .card {
@@ -70,4 +70,12 @@ article p {
 
 .post-item {
   @apply sm:min-w-full lg:min-w-[769px];
+}
+
+code.highlighter-rouge {
+  @apply p-0.5 bg-slate-900 rounded-sm;
+}
+
+.highlighter-rouge > .highlight {
+  @apply py-2 px-4 bg-slate-900 rounded-sm;
 }
