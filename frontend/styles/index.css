@@ -64,6 +64,10 @@ article p {
   @apply my-3;
 }
 
-article .card {
+.card {
   @apply px-10 py-5 rounded bg-slate-800 shadow-md;
+}
+
+.post-item {
+  @apply sm:min-w-full lg:min-w-[769px];
 }
