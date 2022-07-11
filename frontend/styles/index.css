@@ -56,6 +56,10 @@ h6 {
   @apply tracking-wide;
 }
 
+h1 {
+  @apply text-xl md:text-3xl;
+}
+
 .active-link {
   border-bottom: 2px solid var(--action-color);
 }
@@ -64,8 +68,12 @@ article p {
   @apply my-3 leading-relaxed;
 }
 
+article {
+  @apply w-full;
+}
+
 .card {
-  @apply px-10 py-5 rounded bg-slate-800 shadow-md;
+  @apply w-full px-3 py-5 md:px-10 md:py-5 bg-slate-800 shadow-md;
 }
 
 .post-item {
