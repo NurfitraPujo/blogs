@@ -31,3 +31,5 @@ gem "puma", "~> 5.6"
 group :development do
   gem "byebug"
 end
+
+gem "bridgetown-seo-tag", "~> 5.0", :group => :bridgetown_plugins
